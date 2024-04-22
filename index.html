@@ -11,6 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 
 <body class="main-text-color">
@@ -28,7 +33,7 @@
     </div>
     <!-- Replace the # inside of the href="#" with your links. -->
     <div class="links-container">
-      <div class="button toggle">Blog post</div>
+      <div class="button toggle"><i class="fa-brands fa-medium"></i> Blog post</div>
       <div class="slidedown">
         <div class="description">
           <h2>Unveiling Apple's Hidden Tracking</h2>
@@ -37,20 +42,47 @@
         </div>
       </div>
 
-      <div class="button toggle">Video</div>
+      <div class="button toggle"><i class="fa-brands fa-youtube"></i> Video</div>
       <div class="slidedown">
         <div class="description">
           <h2>Coming soon...</h2>
           <p>Soon there will be a very interesting and engaging video here...</p>
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            }
+          
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+          <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/BYOO-W3Hkg8?si=A1FtQrQVrTZyqpN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
           <a href="#" class="external-link" target="_blank">Watch</a>
         </div>
       </div>
 
-      <div class="button toggle">Podcast</div>
+      <div class="button toggle"><i class="fa-brands fa-soundcloud"></i> Podcast</div>
       <div class="slidedown">
         <div class="description">
           <h2>Chronically Online: Parasocial Relationships</h2>
           <p>Discover the power of social media on young minds with our podcast episode. We delve into parasocial relationships, revealing how influencers and celebrities shape perceptions and impact self-esteem. Join us for an enlightening discussion with two people who have extensive experience in the matter.</p>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1790095381&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+          </iframe>
+          <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/william-furgerson" title="William Furgerson" target="_blank" style="color: #cccccc; text-decoration: none;">William Furgerson</a> · <a href="https://soundcloud.com/william-furgerson/chronically-online-parasocial-relationships" title="Chronically Online - Parasocial Relationships" target="_blank" style="color: #cccccc; text-decoration: none;">Chronically Online - Parasocial Relationships</a>
+          </div>
           <a href="https://soundcloud.com/william-furgerson/chronically-online-parasocial-relationships" class="external-link" target="_blank">Listen</a>
         </div>
       </div>
@@ -62,7 +94,7 @@
     </div>
 
     <div class="links-container">
-      <a href="https://github.com/MovementGH" class="button" target="_blank">GitHub</a>
+      <a href="https://github.com/MovementGH" class="button" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
     </div>
 
   </div>
